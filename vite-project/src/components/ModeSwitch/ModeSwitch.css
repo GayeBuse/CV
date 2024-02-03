@@ -2,7 +2,20 @@
   font-family: Inter;
   font-size: 15px;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  text-align: left;
+  color: #777777;
+}
+.container {
+  text-align: right;
+}
+.dil {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4731d3;
+}
+.as {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  color: #777777;
 }
