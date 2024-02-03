@@ -2,13 +2,52 @@
   display: flex;
   width: 1140px;
   height: 355px;
-  align-items: flex-end;
+  gap: 40px;
+}
+.baslık h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 48px;
 }
 .profile-box {
   width: 413px;
-  height: 229px;
+  display: flex;
+  align-items: center;
+}
+.profile h1 {
+  font-size: Inter;
+  font-weight: 600;
+  font-size: 30px;
+  color: #4338ca;
+}
+.bilgi-cevap {
+  display: flex;
+  gap: 50px;
+}
+.bilgi {
+  font-size: Inter;
+  font-weight: 600;
+  font-size: 18px;
+}
+.cevap {
+  font-size: Inter;
+  font-weight: 400;
+  font-size: 18px;
 }
 .about-box {
-  width: 577px;
-  height: 182px;
+  display: flex;
+  padding-top: 70px;
+  width: 520px;
+}
+.About {
+  font-size: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6b7280;
+}
+.About h1 {
+  font-size: Inter;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4338ca;
 }

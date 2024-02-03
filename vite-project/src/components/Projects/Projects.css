@@ -1,8 +1,89 @@
 .projects-container {
   width: 1140px;
-  height: 575px;
+}
+.projects-baslik {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 48px;
 }
 .projects {
-  margin: 0 auto;
   display: flex;
+  gap: 80px;
+}
+.workintechh {
+  width: 300px;
+}
+.Random {
+  width: 300px;
+}
+.journey {
+  width: 300px;
+}
+.resim1 {
+  width: 300px;
+  height: 180px;
+}
+.resim2 {
+  width: 300px;
+  height: 180px;
+}
+.resim3 {
+  width: 300px;
+  height: 180px;
+}
+.buttton1 {
+  width: 68px;
+  height: 27px;
+  border: 1px solid #3730a3;
+  margin-right: 20px;
+  border-radius: 4px;
+  color: #3730a3;
+}
+.buttton2 {
+  width: 68px;
+  height: 27px;
+  border: 1px solid #3730a3;
+  border-radius: 4px;
+  margin-right: 20px;
+  color: #3730a3;
+}
+.buttton3 {
+  width: 68px;
+  height: 27px;
+  border: 1px solid #3730a3;
+  margin-right: 20px;
+  border-radius: 4px;
+  color: #3730a3;
+}
+.workintechh p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7280;
+}
+.Random p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7280;
+}
+.journey p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7280;
+}
+.project-baslik h2 {
+  color: #3730a3;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: Inter;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  color: #3730a3;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
 }

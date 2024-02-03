@@ -1,8 +1,38 @@
 .footer-container {
-  width: 1440px;
+  width: 1140px;
   height: 409px;
 }
+.email {
+  display: flex;
+  gap: 10px;
+}
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+}
+.iletisim {
+  display: flex;
+  gap: 20px;
+}
 .footer {
-  width: 1145px;
-  height: 252px;
+  width: 500px;
+  height: 106px;
+  margin-bottom: 50px;
+}
+.footer h1 {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: Inter;
+}
+.yesil {
+  color: #00ab6b;
+}
+.mavi {
+  color: #0077b5;
+}
+.renk {
+  color: #af0c48;
 }

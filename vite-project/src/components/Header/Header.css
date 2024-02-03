@@ -4,10 +4,18 @@
   width: 1140px;
 }
 .nav-item1 {
+  padding-top: 1rem;
   margin: 1rem;
+  font-family: Inter;
+  font-size: 18px;
+  color: #6b7280;
 }
 .nav-item2 {
+  padding-top: 1rem;
   margin: 1rem;
+  font-family: Inter;
+  font-size: 18px;
+  color: #6b7280;
 }
 .nav-item3 {
   padding: 12px, 32px, 12px, 32px;

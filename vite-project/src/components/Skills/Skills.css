@@ -4,9 +4,54 @@
 .skills {
   width: 1039px;
   height: 64px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 48px;
 }
 .skills-list {
   display: flex;
   width: 1140px;
-  height: 104px;
+  gap: 90px;
+}
+.java h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4338ca;
+}
+.java p {
+  padding-top: 20px;
+  width: 300px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6b7280;
+}
+.React h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4338ca;
+}
+.React p {
+  padding-top: 20px;
+  width: 300px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6b7280;
+}
+.Node h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4338ca;
+}
+.Node p {
+  padding-top: 20px;
+  width: 300px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6b7280;
 }

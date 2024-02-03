@@ -1,18 +1,80 @@
 .hero-container {
   display: flex;
   width: 1140px;
-  height: 428px;
+  height: 500px;
+}
+.hero-girl {
+  color: #3730a3;
+  padding-left: 125px;
 }
 .hero-left {
   width: 596px;
-  height: 428px;
-  margin-right: 5rem;
 }
-.image1 {
+.baslik h1 {
+  padding-top: 30px;
+  width: 596px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+}
+.baslik p {
+  font-family: Inter;
+  width: 500px;
+  height: 105px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 30px;
+  color: #6b7280;
+}
+.buton {
+  width: 421px;
+  padding-top: 30px;
+  gap: 12px;
+  display: flex;
+}
+.buton1 {
+  width: 131px;
+  height: 52px;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  gap: 10px;
+  background-color: #3730a3;
+  color: white;
+}
+.buton2 {
+  width: 127px;
+  height: 52px;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  color: #3730a3;
+  font-weight: 500;
+}
+
+.buton3 {
+  width: 139px;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  color: #3730a3;
+  font-weight: 500;
+}
+.ikon {
+  color: #3730a3;
+  width: 26px;
+  height: 27px;
+}
+.resim {
+  width: 476px;
+  height: 375px;
+  padding-top: 20px;
+}
+.gbo {
   width: 476px;
   height: 375px;
   border-radius: 18px;
-}
-.buton1 {
-  padding-right: 2rem;
+  object-fit: cover;
 }
