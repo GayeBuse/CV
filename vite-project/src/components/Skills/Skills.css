@@ -1,5 +1,8 @@
 .skills-container {
   width: 1140px;
+  border-top: 1px solid #bab2e7;
+  border-bottom: 1px solid #bab2e7;
+  padding-bottom: 20px;
 }
 .skills {
   width: 1039px;

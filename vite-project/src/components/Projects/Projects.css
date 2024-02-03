@@ -1,6 +1,8 @@
 .projects-container {
   width: 1140px;
+  border-top: 1px solid #bab2e7;
 }
+
 .projects-baslik {
   font-family: Inter;
   font-weight: 600;

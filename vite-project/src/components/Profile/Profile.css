@@ -3,6 +3,7 @@
   width: 1140px;
   height: 355px;
   gap: 40px;
+  padding-top: 50px;
 }
 .baslık h1 {
   font-family: Inter;
