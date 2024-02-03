@@ -1,0 +1,12 @@
+.skills-container {
+  width: 1140px;
+}
+.skills {
+  width: 1039px;
+  height: 64px;
+}
+.skills-list {
+  display: flex;
+  width: 1140px;
+  height: 104px;
+}

@@ -1,0 +1,14 @@
+.profile-container {
+  display: flex;
+  width: 1140px;
+  height: 355px;
+  align-items: flex-end;
+}
+.profile-box {
+  width: 413px;
+  height: 229px;
+}
+.about-box {
+  width: 577px;
+  height: 182px;
+}

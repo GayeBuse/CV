@@ -4,8 +4,9 @@
   font-weight: 700;
   color: #777777;
 }
-.container {
+.mode-container {
   text-align: right;
+  width: 1140px;
 }
 .dil {
   font-family: Inter;

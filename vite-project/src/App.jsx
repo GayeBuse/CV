@@ -10,15 +10,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="big-container">
-        <div className="min-container">
-          <ModeSwitch />
-          <Header />
-          <Hero />
-          <Skills />
-          <Profile />
-          <Projects />
-        </div>
+      <div className="container">
+        <ModeSwitch />
+        <Header />
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
         <Footer />
       </div>
     </>

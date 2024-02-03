@@ -1,0 +1,22 @@
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 1140px;
+}
+.nav-item1 {
+  margin: 1rem;
+}
+.nav-item2 {
+  margin: 1rem;
+}
+.nav-item3 {
+  padding: 12px, 32px, 12px, 32px;
+  margin: 1rem;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  color: #3730a3;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+}
