@@ -32,7 +32,7 @@ export default function ModeSwitch() {
       </span>
       |
       <span onClick={handleSwitchLanguageChange} className="dil">
-        {localLanguage === "tr" ? "TÜRKÇE" : "ENGLISH"}
+        {localLanguage === "tr" ? "ENGILSH" : "TüRKÇE"}
       </span>
       <span className="as">'YE GEÇ</span>
     </div>

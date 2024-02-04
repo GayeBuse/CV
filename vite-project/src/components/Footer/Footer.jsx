@@ -1,11 +1,17 @@
 import "./Footer.css";
 import parmak from "./parmak.png";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../context/Language";
+import { useContext } from "react";
 export default function Footer() {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="footer-container">
       <div className="footer">
-        <h1>Let’s work together on your next product.</h1>
+        {language === "en"
+          ? "Let’s work together on your next product."
+          : "Bir sonraki ürününüz üzerinde birlikte çalışalım."}
+        <h1></h1>
       </div>
       <div className="footer-link">
         <div className="email">
