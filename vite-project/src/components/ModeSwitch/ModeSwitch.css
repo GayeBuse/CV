@@ -3,6 +3,7 @@
   font-size: 15px;
   font-weight: 700;
   color: #777777;
+  padding-right: 20px;
 }
 .mode-container {
   text-align: right;
@@ -13,6 +14,8 @@
   font-size: 15px;
   font-weight: 700;
   color: #4731d3;
+  padding-left: 20px;
+  cursor: grab;
 }
 .as {
   font-family: Inter;
@@ -20,7 +23,17 @@
   font-weight: 700;
   color: #777777;
 }
-button:hover {
-  top: 0;
-  left: 50%;
+.mode-container button {
+  font-size: 50px; /* Set the font size */
+  padding: 8px; /* Add padding to make the clickable area larger */
+  cursor: grab;
+  color: #4731d3;
+  transition: transform 0.3s, color 0.3s; /* Add transition for smooth scaling and color change */
+}
+
+.mode-container button:hover {
+  transform: translateX(
+    5px
+  ); /* Move the button 5 pixels to the right on hover */
+  color: #4731d3; /* Example color change on hover */
 }

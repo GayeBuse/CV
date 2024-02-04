@@ -4,11 +4,14 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { DarkModeContextProvider } from "./context/DarkMode.jsx";
+import { LanguageContextProvider } from "./context/Language.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <DarkModeContextProvider>
-    <Router>
-      <App />
-    </Router>
-  </DarkModeContextProvider>
+  <LanguageContextProvider>
+    <DarkModeContextProvider>
+      <Router>
+        <App />
+      </Router>
+    </DarkModeContextProvider>
+  </LanguageContextProvider>
 );

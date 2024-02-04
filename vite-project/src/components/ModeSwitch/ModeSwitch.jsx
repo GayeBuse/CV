@@ -1,8 +1,13 @@
 import { IoToggleSharp } from "react-icons/io5";
 import { useContext, useState } from "react";
 import { DarkModeContext } from "../../context/DarkMode";
+import { LanguageContext } from "../../context/Language";
 import "./ModeSwitch.css";
 export default function ModeSwitch() {
+  const { language, switchLanguage } = useContext(LanguageContext);
+  const [localLanguage, setLocalLanguage] = useState(
+    localStorage.getItem("language") || language
+  );
   const { theme, toggleTheme } = useContext(DarkModeContext);
   const [localTheme, setLocalTheme] = useState(
     localStorage.getItem("theme") || theme
@@ -12,13 +17,23 @@ export default function ModeSwitch() {
     toggleTheme();
     localStorage.setItem("theme", theme); //hangi adla depolanacak
   };
+  const handleSwitchLanguageChange = () => {
+    setLocalLanguage(language === "tr" ? "en" : "tr");
+    switchLanguage();
+    localStorage.setItem("language", language);
+  };
   return (
     <div className="mode-container">
       <button onClick={handleThemeChange}>
         <IoToggleSharp />
       </button>
-      <span className="dark-mode">DARK MODE | </span>
-      <span className="dil">TÜRKÇE</span>
+      <span className="dark-mode">
+        {localTheme === "light" ? "LIGHT MODE" : "DARK MODE"}
+      </span>
+      |
+      <span onClick={handleSwitchLanguageChange} className="dil">
+        {localLanguage === "tr" ? "TÜRKÇE" : "ENGLISH"}
+      </span>
       <span className="as">'YE GEÇ</span>
     </div>
   );
