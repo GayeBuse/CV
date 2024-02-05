@@ -9,24 +9,23 @@ export default function Projects() {
   const [prData, setprData] = useState([]);
 
   useEffect(() => {
-    const fetchProjeAPI = async () => {
-      try {
-        const response = await axios.get(
-          "https://9955e98aef00495a969d6be39f968649.api.mockbin.io/"
-        );
-        const projectData =
-          language === "en"
-            ? response.data.ProjectData
-            : response.data.ProjectDataTR;
-        setprData(projectData);
-      } catch (error) {
-        console.error("Error fetching project data:", error);
-      }
+    const fetchData = () => {
+      axios
+        .get("https://09484b048ffd49baa210890a42213ba2.api.mockbin.io/")
+        .then((response) => {
+          const projectData =
+            language === "en"
+              ? response.data.ProjectData
+              : response.data.ProjectDataTr;
+          setprData(projectData);
+        })
+        .catch((error) => {
+          console.error("Error fetching project data:", error);
+        });
     };
-
-    fetchProjeAPI();
+    fetchData();
   }, [language]);
-
+  //: Dil değiştiğinde çalışacak bir etkileşimli işlev tanımlar. Bu işlev, API'den veri almak ve dil bağlamına göre işlemek için kullanılır.
   return (
     <div className="projects-container">
       <div className="projects-baslik">
@@ -48,13 +47,14 @@ export default function Projects() {
                   ))}
                   <div className="link">
                     <a
-                      href={project.gitHub}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={project.gitHub} //Bu özellik, bağlantının hedefini belirtir
+                      target="_blank" //Bu özellik, bağlantının yeni bir tarayıcı sekmesinde veya penceresinde açılmasını sağlar
                     >
                       GitHub
                     </a>
-                    {/* <a href={project.ViewSite} target="_blank" rel="noopener noreferrer">View Site</a> */}
+                    <a href={project.ViewSite} target="_blank">
+                      View Site
+                    </a>
                   </div>
                 </div>
               </div>

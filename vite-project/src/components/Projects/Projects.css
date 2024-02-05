@@ -2,11 +2,16 @@
   width: 1140px;
   border-top: 1px solid #bab2e7;
 }
-
+.dark .projects-baslik h1 {
+  color: #aebccf;
+}
 .projects-baslik {
   font-family: Inter;
   font-weight: 600;
   font-size: 48px;
+}
+.dark .projects h2 {
+  color: #cfcbff;
 }
 .projects {
   display: flex;
@@ -34,7 +39,7 @@
   height: 180px;
 }
 .buttton1 {
-  width: 68px;
+  min-width: 68px;
   height: 27px;
   border: 1px solid #3730a3;
   margin-right: 20px;
@@ -56,6 +61,21 @@
   margin-right: 20px;
   border-radius: 4px;
   color: #3730a3;
+}
+.dark .buttton1 {
+  background-color: #383838;
+  color: #8f88ff;
+  border: 1px solid #8f88ff;
+}
+.dark .buttton2 {
+  background-color: #383838;
+  color: #8f88ff;
+  border: 1px solid #8f88ff;
+}
+.dark .buttton3 {
+  background-color: #383838;
+  color: #8f88ff;
+  border: 1px solid #8f88ff;
 }
 .workintechh p {
   font-family: Inter;
@@ -88,4 +108,7 @@
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
+}
+.dark .link {
+  color: #e1e1ff;
 }

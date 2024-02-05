@@ -5,6 +5,9 @@
   gap: 40px;
   padding-top: 50px;
 }
+.dark .baslık h1 {
+  color: #aebccf;
+}
 .baslık h1 {
   font-family: Inter;
   font-weight: 600;
@@ -24,6 +27,9 @@
 .bilgi-cevap {
   display: flex;
   gap: 50px;
+}
+.dark .bilgi-cevap p {
+  color: #6b7280;
 }
 .bilgi {
   font-size: Inter;
@@ -51,4 +57,7 @@
   font-weight: 500;
   font-size: 30px;
   color: #4338ca;
+}
+.dark .About h1 {
+  color: #b7aaff;
 }

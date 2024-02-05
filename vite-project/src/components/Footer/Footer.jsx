@@ -21,11 +21,21 @@ export default function Footer() {
           </Link>
         </div>
         <div className="iletisim">
-          <Link to="/Blog">Personal Blog</Link>
-          <Link to="/Github" className="yesil">
+          <Link to="https://github.com/GayeBuse" target="_blank">
+            Personal Blog
+          </Link>
+          <Link
+            to="https://github.com/GayeBuse"
+            target="_blank"
+            className="yesil"
+          >
             GitHub
           </Link>
-          <Link to="/Linkedin" className="mavi">
+          <Link
+            to="https://www.linkedin.com/in/gaye-buse-%C3%B6zkan-66a711197/"
+            target="_blank"
+            className="mavi"
+          >
             Linkedin
           </Link>
         </div>

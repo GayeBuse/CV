@@ -29,3 +29,7 @@
   padding-bottom: 12px;
   padding-left: 32px;
 }
+.dark .nav-item3 {
+  background-color: #ffffff;
+  color: #3730a3;
+}

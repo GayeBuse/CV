@@ -16,7 +16,7 @@
         },
         {
             "id":2,
-            "img":".src/components/Projects/movie.jpg",
+            "img":"src/components/Projects/movie.jpg",
             "title":"Movie Page",
             "description":"Creating, importing and exporting components Props: Data sharing and rules between components Components sharing state and advanced state",
             "skills":[

@@ -1,12 +1,17 @@
 .footer-container {
-  width: 1140px;
-  border: 1px solid black;
+  max-width: 1440px;
+  background-color: #f9f9f9;
   margin-top: 70px;
   height: 220px;
+}
+.dark .footer-container {
+  background-color: #141414;
+  border: none;
 }
 .email {
   display: flex;
   gap: 10px;
+  padding-left: 80px;
 }
 .footer-link {
   display: flex;
@@ -18,11 +23,18 @@
 .iletisim {
   display: flex;
   gap: 20px;
+  padding-right: 180px;
+}
+.dark .footer {
+  color: #aebccf;
 }
 .footer {
+  font-size: 42px;
   width: 500px;
   height: 106px;
   margin-bottom: 50px;
+  font-weight: 600;
+  padding-left: 80px;
 }
 .footer h1 {
   font-size: 42px;
@@ -37,4 +49,10 @@
 }
 .renk {
   color: #af0c48;
+}
+.dark .renk {
+  color: #bab2e7;
+}
+.dark .iletisim {
+  color: #e1e1ff;
 }

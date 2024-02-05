@@ -6,7 +6,6 @@ export default function Skills() {
   return (
     <div className="skills-container">
       <div className="skills">
-        {" "}
         {language === "en" ? "Skills" : "Yetenekler"}
       </div>
       <div className="skills-list">

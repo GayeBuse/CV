@@ -37,3 +37,6 @@
   ); /* Move the button 5 pixels to the right on hover */
   color: #4731d3; /* Example color change on hover */
 }
+.dark .dil {
+  color: #bab2e7;
+}
