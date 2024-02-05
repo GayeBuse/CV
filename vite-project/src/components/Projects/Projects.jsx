@@ -1,82 +1,65 @@
 import "./Projects.css";
-import pizza from "./pizza.jpg";
-import movie from "./movie.jpg";
-import login from "./login.jpg";
-import { Link } from "react-router-dom";
+
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
+import { LanguageContext } from "../../context/Language";
+
 export default function Projects() {
+  const { language } = useContext(LanguageContext);
+  const [prData, setprData] = useState([]);
+
+  useEffect(() => {
+    const fetchProjeAPI = async () => {
+      try {
+        const response = await axios.get(
+          "https://9955e98aef00495a969d6be39f968649.api.mockbin.io/"
+        );
+        const projectData =
+          language === "en"
+            ? response.data.ProjectData
+            : response.data.ProjectDataTR;
+        setprData(projectData);
+      } catch (error) {
+        console.error("Error fetching project data:", error);
+      }
+    };
+
+    fetchProjeAPI();
+  }, [language]);
+
   return (
     <div className="projects-container">
       <div className="projects-baslik">
         <h1>Projects</h1>
       </div>
       <div className="projects">
-        <div className="workintechh">
-          <img className="resim1" src={pizza} />
-          <div className="project-baslik">
-            <h2>Workintech</h2>
-            <p>
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-            <div>
-              <button className="buttton1">react</button>
-              <button className="buttton2">redux</button>
-              <button className="buttton3">axios</button>
-              <div className="link">
-                <Link to="/HireMe">GitHub</Link>
-                <Link to="/ViewSite">View Site</Link>
+        {prData &&
+          prData.map((project, index) => (
+            <div key={index} className="workintechh">
+              <img className="resim1" src={project.img} alt={project.title} />
+              <div className="project-baslik">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <div>
+                  {project.skills.map((skill, index) => (
+                    <button key={index} className={`buttton${index + 1}`}>
+                      {skill}
+                    </button>
+                  ))}
+                  <div className="link">
+                    <a
+                      href={project.gitHub}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                    {/* <a href={project.ViewSite} target="_blank" rel="noopener noreferrer">View Site</a> */}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="Random">
-          <img className="resim2" src={movie} />
-          <div className="project-baslik">
-            <h2>Random Jokes</h2>
-            <p>
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-          </div>
-          <div>
-            <button className="buttton1">react</button>
-            <button className="buttton2">redux</button>
-            <button className="buttton3">axios</button>
-            <div className="link">
-              <Link to="/HireMe">GitHub</Link>
-              <Link to="/ViewSite">View Site</Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="journey">
-          <img className="resim3" src={login} />
-          <div className="project-baslik">
-            <h2>Journey</h2>
-            <p>
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-            <div>
-              <button className="buttton1">react</button>
-              <button className="buttton2">redux</button>
-              <button className="buttton3">axios</button>
-              <div className="link">
-                <Link to="/HireMe">GitHub</Link>
-                <Link to="/ViewSite">View Site</Link>
-              </div>
-            </div>
-          </div>
-        </div>
+          ))}
       </div>
     </div>
   );
