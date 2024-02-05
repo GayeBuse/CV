@@ -1,7 +1,7 @@
 import "./Projects.css";
-import resim1 from "./resim1.png";
-import resim2 from "./resim2.png";
-import resim3 from "./resim3.png";
+import pizza from "./pizza.jpg";
+import movie from "./movie.jpg";
+import login from "./login.jpg";
 import { Link } from "react-router-dom";
 export default function Projects() {
   return (
@@ -11,7 +11,7 @@ export default function Projects() {
       </div>
       <div className="projects">
         <div className="workintechh">
-          <img className="resim1" src={resim1} />
+          <img className="resim1" src={pizza} />
           <div className="project-baslik">
             <h2>Workintech</h2>
             <p>
@@ -33,7 +33,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="Random">
-          <img className="resim2" src={resim2} />
+          <img className="resim2" src={movie} />
           <div className="project-baslik">
             <h2>Random Jokes</h2>
             <p>
@@ -56,7 +56,7 @@ export default function Projects() {
         </div>
 
         <div className="journey">
-          <img className="resim3" src={resim3} />
+          <img className="resim3" src={login} />
           <div className="project-baslik">
             <h2>Journey</h2>
             <p>
