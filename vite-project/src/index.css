@@ -57,6 +57,9 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+  .workintechh img {
+    object-fit: cover;
+  }
 }
 @media screen and (max-width: 576px) {
   .nav-item3 {
