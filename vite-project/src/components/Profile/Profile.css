@@ -1,7 +1,6 @@
 .profile-container {
   display: flex;
   max-width: 1140px;
-
   gap: 40px;
   margin-top: 40px;
   font-family: Inter;
@@ -40,7 +39,7 @@
 }
 .about-box {
   display: flex;
-  padding-top: 70px;
+  margin-top: 70px;
   max-width: 520px;
 }
 .About {

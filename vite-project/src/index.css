@@ -15,19 +15,63 @@ body {
 .dark body {
   background-color: var(--dark-bg);
 }
+
 @media screen and (max-width: 992px) {
-  .max-w-screen-xl mx-auto border {
-    background-color: black;
-  }
   .resim {
     display: none;
   }
-}
-@media screen and (max-width: 576px) {
-  .container {
-    padding-left: 20px;
+  .skills-list {
+    display: flex;
+    gap: 10px;
+  }
+  .baslık {
+    display: none;
+  }
+  .about-box {
+    margin: 0px;
+  }
+  .projects {
+    display: flex;
+    gap: 10px;
+  }
+  .projects h2 {
+    font-size: 20px;
+  }
+  .projects .butttton {
+    display: flex;
+    flex-direction: column;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .email {
+    display: flex;
+    align-items: center;
+  }
+  .footer {
+    font-size: 20px;
+    margin: 0;
+  }
+  .footer-link {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-item3 {
+    display: flex;
+    padding: 0;
+  }
+  .baslik h1 {
+    font-size: 40px;
+  }
+  .buton {
+    flex-direction: column;
+    max-width: 10px;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -2,7 +2,8 @@
   max-width: 1440px;
   background-color: #f9f9f9;
   margin-top: 70px;
-  height: 280px;
+  max-height: 280px;
+  font-family: Inter;
 }
 .dark .footer-container {
   background-color: #141414;
@@ -17,7 +18,7 @@
 .footer-link {
   display: flex;
   justify-content: space-between;
-  font-family: Inter;
+
   font-weight: 500;
   font-size: 18px;
 }
@@ -32,8 +33,8 @@
 }
 .footer {
   font-size: 42px;
-  width: 500px;
-  height: 106px;
+  max-width: 500px;
+  max-height: 106px;
   margin-bottom: 50px;
   font-weight: 600;
   padding-left: 80px;
