@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import gbo from "./gbo.jpeg";
 import { LanguageContext } from "../../context/Language";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 export default function Hero() {
   const { language } = useContext(LanguageContext);
   return (
@@ -27,17 +28,25 @@ export default function Hero() {
             </p>
           </div>
           <div className="buton">
-            <button className="buton1">
-              <span>{language === "en" ? "Hire me" : "Beni İşe Al"}</span>
-            </button>
-            <button className="buton2">
+            <Link className="buton1" to="/" target="_blank">
+              {language === "en" ? "Hire me" : "Beni İşe Al"}
+            </Link>
+            <Link
+              className="buton2"
+              to="https://github.com/GayeBuse"
+              target="_blank"
+            >
               <FaGithub className="ikon" />
-              <span>Github</span>
-            </button>
-            <button className="buton3">
+              Github
+            </Link>
+            <Link
+              className="buton3"
+              to="https://www.linkedin.com/in/gaye-buse-%C3%B6zkan-66a711197/"
+              target="_blank"
+            >
               <FaLinkedinIn className="ikon" />
-              <span>Linkedin</span>
-            </button>
+              Linkedin
+            </Link>
           </div>
         </div>
       </div>

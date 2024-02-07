@@ -13,16 +13,16 @@ export default function Skills() {
           <h1>Java Script</h1>
           <p>
             {language === "en"
-              ? "With my skills in JavaScript, I develop interactive and user-friendly web applications. Thanks to my strong fundamental knowledge, I am able to work effectively with modern JavaScript frameworks and libraries."
-              : "JavaScript konusundaki yeteneklerimle, interaktif ve kullanıcı dostu web uygulamaları geliştirmekteyim. Güçlü temel bilgilerim sayesinde, modern JavaScript çerçeveleri ve kütüphaneleriyle etkili bir şekilde çalışabiliyorum. "}
+              ? "With my skills in JavaScript, I develop interactive and user-friendly web applications."
+              : "JavaScript konusundaki yeteneklerimle, interaktif ve kullanıcı dostu web uygulamaları geliştirmekteyim.  "}
           </p>
         </div>
         <div className="React">
           <h1>React.Js</h1>
           <p>
             {language === "en"
-              ? "I create more modular and readable codes using React's newest features such as Hooks and Context API. My openness to continuous learning and self-improvement, combined with my close follow-up of innovations in the React ecosystem, allows me to always keep my projects up-to-date."
-              : "Hooks, Context API gibi React'in en yeni özelliklerini kullanarak daha modüler ve okunabilir kodlar oluşturuyorum. Sürekli öğrenmeye ve kendimi geliştirmeye açık olmam, React ekosistemindeki yenilikleri yakından takip etmemle birleşerek, projelerimi her zaman güncel tutmamı sağlıyor."}
+              ? "I create more modular and readable codes using React's newest features such as Hooks and Context API."
+              : "Hooks, Context API gibi React'in en yeni özelliklerini kullanarak daha modüler ve okunabilir kodlar oluşturuyorum. "}
           </p>
         </div>
         <div className="Node">

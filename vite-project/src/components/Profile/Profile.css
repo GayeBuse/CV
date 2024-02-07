@@ -1,25 +1,24 @@
 .profile-container {
   display: flex;
-  width: 1140px;
-  height: 355px;
+  max-width: 1140px;
+
   gap: 40px;
-  padding-top: 50px;
+  margin-top: 40px;
+  font-family: Inter;
 }
 .dark .baslık h1 {
   color: #aebccf;
 }
 .baslık h1 {
-  font-family: Inter;
   font-weight: 600;
   font-size: 48px;
 }
 .profile-box {
-  width: 413px;
+  max-width: 413px;
   display: flex;
   align-items: center;
 }
 .profile h1 {
-  font-size: Inter;
   font-weight: 600;
   font-size: 30px;
   color: #4338ca;
@@ -32,28 +31,24 @@
   color: #6b7280;
 }
 .bilgi {
-  font-size: Inter;
   font-weight: 600;
   font-size: 18px;
 }
 .cevap {
-  font-size: Inter;
   font-weight: 400;
   font-size: 18px;
 }
 .about-box {
   display: flex;
   padding-top: 70px;
-  width: 520px;
+  max-width: 520px;
 }
 .About {
-  font-size: Inter;
   font-weight: 400;
   font-size: 18px;
   color: #6b7280;
 }
 .About h1 {
-  font-size: Inter;
   font-weight: 500;
   font-size: 30px;
   color: #4338ca;

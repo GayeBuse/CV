@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="footer-link">
         <div className="email">
           <img src={parmak} />
-          <Link to="/mail" className="renk">
+          <Link to="https://mail.google.com" target="_blank" className="renk">
             gayebuseozkan@gmail.com
           </Link>
         </div>

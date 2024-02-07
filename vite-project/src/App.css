@@ -1,7 +1,4 @@
-#root {
-  margin: 0 auto;
-}
-.container {
-  max-width: 1140px;
-  margin-left: 100px;
+.bg {
+  max-width: 1440px;
+  border: 1px solid #383838;
 }

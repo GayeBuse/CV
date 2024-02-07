@@ -1,3 +1,4 @@
+// DarkModeContextProvider bileşenini kullanarak tema bilgisini hem localStorage'a hem de context'e kaydet
 import React, { createContext, useState, useEffect } from "react";
 
 // DarkMode context'i oluşturuluyor
@@ -27,11 +28,11 @@ export const DarkModeContextProvider = ({ children }) => {
       document.documentElement.classList.remove("dark");
     };
   }, [theme]);
-  //sayfa renderlanmıypr dark olmuyor
-  // DarkModeProvider bileşeni oluşturuluyor
+
   return (
     <DarkModeContext.Provider value={{ theme, setTheme, toggleTheme }}>
       {children}
     </DarkModeContext.Provider>
   );
 };
+export const useDarkMode = () => useContext(DarkModeContext);

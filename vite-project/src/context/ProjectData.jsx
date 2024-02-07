@@ -2,16 +2,16 @@
     "ProjectData" : [
         {
             "id":1,
-            "img":"src/components/Projects/pizza.jpg",
-            "title":"Order Pizza",
-            "description":"A pizza ordering site that I made using routing, forms, cypress tests and css.",
+            "img":"src/components/Projects/alıs.jpg",
+            "title":"Shopping Categories",
+            "description":"A shop ordering site that I made using routing, forms, cypress tests and css.A shop ordering site that I made using routing, forms, cypress tests and css.",
             "skills":[
                 "JavaScript",
                 "CSS",
                 "Form"
             ],
-            "gitHub":"https://github.com/GayeBuse/fsweb-s7-challenge-pizza",
-            "View Site":""
+            "gitHub":"https://github.com/GayeBuse/Alisveris-Kategoriler",
+            "ViewSite":"https://alisveris-kategoriler.vercel.app/"
 
         },
         {
@@ -25,7 +25,7 @@
                 "React"
             ],
             "gitHub":"https://github.com/GayeBuse/movie-page",
-            "View Site":""
+            "ViewSite": "https://movie-page-kappa.vercel.app/"
 
         },
          {
@@ -39,23 +39,23 @@
                 "Form"
             ],
             "gitHub":"https://github.com/GayeBuse/Login-Formu",
-            "View Site":""
+            "ViewSite":"https://login-formu.vercel.app/"
 
         }
     ],
     "ProjectDataTr" : [
         {
             "id":1,
-            "img":"src/components/Projects/pizza.jpg",
-            "title":"Pizza Siparişi",
-            "description":"Routing, form, selvi testleri ve css kullanarak yaptığım pizza sipariş sitesi.",
+            "img":"src/components/Projects/alıs.jpg",
+            "title":"Alışveriş Kategorileri",
+            "description":"Routing, form, selvi testleri ve css kullanarak yaptığım alışveriş sipariş sitesi.Routing, form, selvi testleri ve css kullanarak yaptığım alışveriş sipariş ",
             "skills":[
                 "JavaScript",
                 "CSS",
                 "Form"
             ],
-            "gitHub":"https://github.com/GayeBuse/fsweb-s7-challenge-pizza",
-            "View Site":""
+            "gitHub":"https://github.com/GayeBuse/Alisveris-Kategoriler",
+            "ViewSite":"https://alisveris-kategoriler.vercel.app/"
 
         },
         {
@@ -69,7 +69,7 @@
                 "React"
             ],
             "gitHub":"https://github.com/GayeBuse/movie-page",
-            "View Site":""
+            "ViewSite": "https://movie-page-kappa.vercel.app/"
 
         },
          {
@@ -83,7 +83,7 @@
                 "Form"
             ],
             "gitHub":"https://github.com/GayeBuse/Login-Formu",
-            "View Site":""
+            "ViewSite":"https://login-formu.vercel.app/"
         }
     ]
 }

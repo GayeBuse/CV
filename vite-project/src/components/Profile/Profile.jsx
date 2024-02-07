@@ -45,8 +45,8 @@ export default function Profile() {
             </p>
             <p>
               {language === "en"
-                ? "Especially the responsibilities I took in the Workintech training course and the skills I gained in this process further reinforced my interest in software development."
-                : " Workintech eğitim kursunda aldığım sorumluluklar ve bu süreçte kazandığım beceriler, yazılım geliştirmeye olan ilgimi daha da pekiştirdi."}
+                ? "The Workintech training course further strengthened my interest in software development."
+                : " Workintech eğitim kursunda yazılım geliştirmeye olan ilgimi daha da pekiştirdi."}
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 .nav-links {
   display: flex;
   justify-content: flex-end;
-  width: 1140px;
+  max-width: 1140px;
 }
 .nav-item1 {
   padding-top: 1rem;
@@ -10,6 +10,7 @@
   font-size: 18px;
   color: #6b7280;
   scroll-behavior: smooth;
+  cursor: grab;
 }
 .nav-item2 {
   padding-top: 1rem;
@@ -17,6 +18,7 @@
   font-family: Inter;
   font-size: 18px;
   color: #6b7280;
+  cursor: grab;
 }
 .nav-item3 {
   padding: 12px, 32px, 12px, 32px;

@@ -1,7 +1,7 @@
 .hero-container {
   display: flex;
-  width: 1140px;
-  height: 500px;
+  max-width: 1140px;
+  min-height: 500px;
 }
 
 .dark .hero-girl {
@@ -16,12 +16,12 @@
 }
 
 .hero-left {
-  width: 596px;
+  max-width: 596px;
 }
 
 .baslik h1 {
-  padding-top: 30px;
-  width: 596px;
+  margin-top: 30px;
+  max-width: 596px;
   font-family: Inter;
   font-weight: 700;
   font-size: 72px;
@@ -30,7 +30,7 @@
 
 .baslik p {
   font-family: Inter;
-  width: 500px;
+  max-width: 500px;
   height: 105px;
   font-weight: 500;
   font-size: 18px;
@@ -39,7 +39,7 @@
 }
 
 .buton {
-  width: 421px;
+  max-width: 421px;
   padding-top: 30px;
   gap: 12px;
   display: flex;
@@ -48,8 +48,8 @@
 .buton1,
 .buton2,
 .buton3 {
-  width: 131px;
-  height: 52px;
+  min-width: 131px;
+  min-height: 52px;
   border: 1px solid #3730a3;
   border-radius: 6px;
   display: flex;
@@ -88,8 +88,9 @@
 }
 
 .resim .gbo {
-  width: 476px;
+  min-width: 476px;
   height: 375px;
   border-radius: 18px;
   object-fit: cover;
+  margin-left: 50px;
 }
