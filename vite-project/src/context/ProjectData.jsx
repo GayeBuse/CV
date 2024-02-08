@@ -2,7 +2,7 @@
     "ProjectData" : [
         {
             "id":1,
-            "img":"./public/alıs.jpeg",
+            "img":"./public/alıs.png",
             "title":"Shopping Categories",
             "description":"A shop ordering site that I made using routing, forms, cypress tests and css.A shop ordering site that I made using routing, forms, cypress tests and css.",
             "skills":[
