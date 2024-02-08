@@ -12,7 +12,7 @@ export default function Projects() {
   useEffect(() => {
     const fetchData = () => {
       axios
-        .get("https://875b266a7ad84dbdaf21539b2f5c6851.api.mockbin.io/")
+        .get("https://b3b9cde387744f35a8fe180ad7319a12.api.mockbin.io/")
         .then((response) => {
           const projectData =
             language === "en"
