@@ -2,7 +2,7 @@
     "ProjectData" : [
         {
             "id":1,
-            "img":"./public/alıs.png",
+            "img":"./icons/alıs.png",
             "title":"Shopping Categories",
             "description":"A shop ordering site that I made using routing, forms, cypress tests and css.A shop ordering site that I made using routing, forms, cypress tests and css.",
             "skills":[
@@ -16,7 +16,7 @@
         },
         {
             "id":2,
-            "img":"./public/movie.jpeg",
+            "img":"./icons/movie.png",
             "title":"Movie Page",
             "description":"Creating, importing and exporting components Props: Data sharing and rules between components Components sharing state and advanced state",
             "skills":[
@@ -46,7 +46,7 @@
     "ProjectDataTr" : [
         {
             "id":1,
-            "img":"./public/alıs.jpeg",
+            "img":"./icons/alıs.png",
             "title":"Alışveriş Kategorileri",
             "description":"Routing, form, selvi testleri ve css kullanarak yaptığım alışveriş sipariş sitesi.Routing, form, selvi testleri ve css kullanarak yaptığım alışveriş sipariş ",
             "skills":[
@@ -60,7 +60,7 @@
         },
         {
             "id":2,
-            "img":"./public/movie.jpeg",
+            "img":"./icons/movie.png",
             "title":"Film Sayfası",
             "description":"Component oluşturmak, import ve export etmek Props: Componentlar arası veri paylaşımı ve kuralları State paylaşan componentlar ve ileri state",
             "skills":[
@@ -74,7 +74,7 @@
         },
          {
             "id":3,
-            "img":"./public/login.jpeg",
+            "img":"./icons/login.png",
             "title":"Giriş Formu",
             "description":"Axios ile belirtilen API'ye istek gönderir. Gelen cevaba göre, doğru sayfaya yönlendirme işlemlerini gerçekleştirir. Bu süreçte useHistory kullanılır.",
             "skills":[
