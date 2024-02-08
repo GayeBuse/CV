@@ -30,7 +30,7 @@
         },
          {
             "id":3,
-            "img":"./public/login.jpeg",
+            "img":"./icons/login.png",
             "title":"Login Formu",
             "description":"Sends a request to the API specified by Axios. Depending on the response, it performs redirection to the correct page. useHistory is used in this process.",
             "skills":[
