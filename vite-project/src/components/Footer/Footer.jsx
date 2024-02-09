@@ -3,20 +3,19 @@ import parmak from "./parmak.png";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../context/Language";
 import { useContext } from "react";
+import ProjectData from "../../ProjectData";
 export default function Footer() {
   const { language } = useContext(LanguageContext);
+  const data = ProjectData[language];
   return (
     <div className="footer-container">
       <div className="footer">
-        {language === "en"
-          ? "Let’s work together on your next product."
-          : "Bir sonraki ürününüz üzerinde birlikte çalışalım."}
-        <h1></h1>
+        <h1>{data.footer.h1}</h1>
       </div>
       <div className="footer-link">
         <div className="email">
           <img src={parmak} />
-          <Link to="https://mail.google.com" target="_blank" className="renk">
+          <Link to="" target="_blank" className="renk">
             gayebuseozkan@gmail.com
           </Link>
         </div>

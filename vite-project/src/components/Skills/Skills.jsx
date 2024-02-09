@@ -1,37 +1,25 @@
 import "./Skills.css";
 import { LanguageContext } from "../../context/Language";
 import { useContext } from "react";
+import ProjectData from "../../ProjectData";
 export default function Skills() {
   const { language } = useContext(LanguageContext);
+  const data = ProjectData[language];
   return (
     <div className="skills-container">
-      <div className="skills">
-        {language === "en" ? "Skills" : "Yetenekler"}
-      </div>
+      <div className="skills">{data.skills.title}</div>
       <div className="skills-list">
         <div className="java">
-          <h1>Java Script</h1>
-          <p>
-            {language === "en"
-              ? "With my skills in JavaScript, I develop interactive and user-friendly web applications."
-              : "JavaScript konusundaki yeteneklerimle, interaktif ve kullanıcı dostu web uygulamaları geliştirmekteyim.  "}
-          </p>
+          <h1>{data.skills.JavaScript.title}</h1>
+          <p>{data.skills.JavaScript.p1}</p>
         </div>
         <div className="React">
-          <h1>React.Js</h1>
-          <p>
-            {language === "en"
-              ? "I create more modular and readable codes using React's newest features such as Hooks and Context API."
-              : "Hooks, Context API gibi React'in en yeni özelliklerini kullanarak daha modüler ve okunabilir kodlar oluşturuyorum. "}
-          </p>
+          <h1>{data.skills.React.title}</h1>
+          <p>{data.skills.React.p1}</p>
         </div>
         <div className="Node">
-          <h1>Node.Js</h1>
-          <p>
-            {language === "en"
-              ? "By understanding the basic principles of Redux, I can manage the application state centrally and establish efficient communication between components."
-              : " Redux'un temel prensiplerini anlayarak, uygulama state'ini merkezi bir şekilde yönetebilir, bileşenler arasında verimli bir iletişim kurabilirim. "}
-          </p>
+          <h1>{data.skills.Node.title}</h1>
+          <p>{data.skills.Node.p1}</p>
         </div>
       </div>
     </div>

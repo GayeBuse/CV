@@ -56,11 +56,7 @@ export default function Projects() {
                       <a href={project.gitHub} target="_blank">
                         GitHub
                       </a>
-                      <a
-                        href={project.ViewSite}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a href={project.ViewSite} target="_blank">
                         View Site
                       </a>
                     </div>

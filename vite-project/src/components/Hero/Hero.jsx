@@ -5,8 +5,10 @@ import gbo from "./gbo.jpeg";
 import { LanguageContext } from "../../context/Language";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import ProjectData from "../../ProjectData";
 export default function Hero() {
   const { language } = useContext(LanguageContext);
+  const data = ProjectData[language];
   return (
     <div className="hero-container">
       <div className="hero">
@@ -15,21 +17,13 @@ export default function Hero() {
         </div>
         <div className="hero-left">
           <div className="baslik">
-            <h1>
-              {language === "en"
-                ? "Creative thinker Minimalism lover"
-                : "Yaratıcı düşünür Minimalizm aşığı "}
-            </h1>
+            <h1>{data.hero.h1}</h1>
 
-            <p>
-              {language === "en"
-                ? " Hi, I’m Gaye Buse. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me."
-                : "Merhaba, Ben Gaye Buse full-stack developer olarak iş aramaktayım. Eğer sağlam ve ölçeklenebilir ön uç ürünleri ve harika kullanıcı deneyimleri yaratmak istiyorsanız, Benimle el sıkışın."}
-            </p>
+            <p>{data.hero.p1}</p>
           </div>
           <div className="buton">
             <Link className="buton1" to="/" target="_blank">
-              {language === "en" ? "Hire me" : "Beni İşe Al"}
+              {data.hero.button1}
             </Link>
             <Link
               className="buton2"
@@ -37,7 +31,7 @@ export default function Hero() {
               target="_blank"
             >
               <FaGithub className="ikon" />
-              Github
+              {data.hero.button2}
             </Link>
             <Link
               className="buton3"
@@ -45,7 +39,7 @@ export default function Hero() {
               target="_blank"
             >
               <FaLinkedinIn className="ikon" />
-              Linkedin
+              {data.hero.button3}
             </Link>
           </div>
         </div>
