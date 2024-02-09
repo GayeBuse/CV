@@ -19,7 +19,7 @@ export const LanguageContextProvider = ({ children }) => {
       document.documentElement.classList.remove("tr");
     }
     return () => {
-      localStorage.removeItem("tr");
+      localStorage.removeItem("language");
       document.documentElement.classList.remove("tr");
     };
   }, [language]);

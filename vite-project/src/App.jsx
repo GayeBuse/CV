@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
-      <div class=" max-w-screen-xl mx-auto border">
+      <div className=" max-w-screen-xl mx-auto border">
         <div className="mx-auto ml-20 max-w-7xl ">
           <ModeSwitch />
           <Header />

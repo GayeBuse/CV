@@ -35,4 +35,3 @@ export const DarkModeContextProvider = ({ children }) => {
     </DarkModeContext.Provider>
   );
 };
-export const useDarkMode = () => useContext(DarkModeContext);
