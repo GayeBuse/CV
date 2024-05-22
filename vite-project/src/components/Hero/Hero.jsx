@@ -1,7 +1,7 @@
 import "./Hero.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import gbo from "./gbo.jpeg";
+import gbo from "./gbo.png";
 import { LanguageContext } from "../../context/Language";
 import { useContext } from "react";
 import { Link } from "react-router-dom";

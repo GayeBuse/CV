@@ -21,6 +21,18 @@ export default function Skills() {
           <h1>{data.skills.Node.title}</h1>
           <p>{data.skills.Node.p1}</p>
         </div>
+        <div className="Java">
+          <h1>{data.skills.Java.title}</h1>
+          <p>{data.skills.Java.p1}</p>
+        </div>
+        <div className="OOP">
+          <h1>{data.skills.OOP.title}</h1>
+          <p>{data.skills.OOP.p1}</p>
+        </div>
+        <div className="SpringBoot">
+          <h1>{data.skills.SpringBoot.title}</h1>
+          <p>{data.skills.SpringBoot.p1}</p>
+        </div>
       </div>
     </div>
   );
